@@ -28,6 +28,18 @@ const articleSchema = {
     type: DataTypes.DATE,
     field: 'updated_at',
     defaultValue: Sequelize.NOW
+  },
+  portrait: {
+    allowNull: false,
+    type: DataTypes.STRING
+  },
+  resume: {
+    allowNull: false,
+    type: DataTypes.STRING
+  },
+  alt: {
+    allowNull: false,
+    type: DataTypes.STRING
   }
 };
 
