@@ -30,15 +30,15 @@ const articleSchema = {
     defaultValue: Sequelize.NOW
   },
   portrait: {
-    allowNull: true,
+    allowNull: false,
     type: DataTypes.STRING
   },
   resume: {
-    allowNull: true,
+    allowNull: false,
     type: DataTypes.STRING
   },
   alt: {
-    allowNull: true,
+    allowNull: false,
     type: DataTypes.STRING
   }
 };
