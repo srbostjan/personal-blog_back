@@ -35,11 +35,11 @@ const articleSchema = {
   },
   resume: {
     allowNull: false,
-    type: DataTypes.STRING
+    type: DataTypes.TEXT
   },
   alt: {
     allowNull: false,
-    type: DataTypes.STRING
+    type: DataTypes.TEXT
   }
 };
 
