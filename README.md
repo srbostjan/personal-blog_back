@@ -5,6 +5,7 @@ It's composed from a unique table that contains the article information
 
 <img src="https://i.ibb.co/RDJ6Nt3/image.png" alt="E/R MODEL" style="width: 200px;">
 
+## API
 ## EndPoints
 ### `GET /articles` : Returns all the articles
 
@@ -17,7 +18,6 @@ It's composed from a unique table that contains the article information
 ### `DELETE /articles/:id` : Deletes the article with the id
 
 ## Technologies
-### API
 - #### Express
 
 ### Database
