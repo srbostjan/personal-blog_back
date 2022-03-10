@@ -8,7 +8,18 @@ const { errorHandler, boomErrorHandler, ormErrorHandler } = require('./middlewar
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.use(cors());
+const whiteList = ['http://localhost:3000', 'http://localhost:4000', 'http://localhost:8080', 'http://localhost:5000', 'http://localhost:8000', 'https://srbostjan.me', 'https://www.srbostjan.me', 'http://srbostjan.me/', 'http://www.srbostjan.me/'];
+const options = {
+  origin: (origin, callback) => {
+    if (whiteList.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}
+
+app.use(cors(options));
 app.use(express.json());
 
 routerApi(app);
