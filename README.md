@@ -2,20 +2,22 @@
 
 ## E/R Model:
 It's composed from a unique table that contains the article information
+
 <img src="https://i.ibb.co/RDJ6Nt3/image.png" alt="E/R MODEL" style="width: 200px;">
 
+## API
 ## EndPoints
-`/articles - GET: ` Returns all the articles
+### `GET /articles` : Returns all the articles
 
-`/articles/:id - GET: ` Returns the article with the id
+### `POST /articles` : Create a new article
 
-`/articles/:id - PUT:` Updates the article with the id
+### `GET /articles/:id` : Returns the article with the id
 
-`/articles/:id - DELETE:` Deletes the article with the id
+### `PUT /articles/:id` : Updates the article with the id
+
+### `DELETE /articles/:id` : Deletes the article with the id
 
 ## Technologies
-
-### API
 - #### Express
 
 ### Database
