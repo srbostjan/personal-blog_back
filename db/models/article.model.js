@@ -40,6 +40,11 @@ const articleSchema = {
   alt: {
     allowNull: false,
     type: DataTypes.TEXT
+  },
+  status: {
+    allowNull: true,
+    type: DataTypes.BOOLEAN,
+    defaultValue: true
   }
 };
 

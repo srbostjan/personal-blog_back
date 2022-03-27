@@ -2,7 +2,11 @@ const { models } = require('../libs/sequelize');
 const boom = require('@hapi/boom');
 class ArticleService {
   async getAllArticles() {
-    const article = await models.Article.findAll();
+    const article = await models.Article.findAll({
+      order: [
+        ['id', 'DESC']
+      ]
+    });
     if(!article) {
       throw boom.notFound('No articles found');
     }
